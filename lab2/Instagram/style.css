@@ -1,0 +1,657 @@
+body {
+    color: rgba(var(--i1d,38,38,38),1);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .react {
+    z-index: 0;
+    height: 100%;
+  }
+  
+  article, div, section {
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    border: 0 solid #000;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .section {
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .main {
+    background-color: rgba(var(--b3f,250,250,250),1);
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-ordinal-group: 5;
+    order: 4;
+  }
+  
+  .article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 32px auto 0;
+    max-width: 935px;
+    padding-bottom: 32px;
+    width: 100%;
+  }
+  
+  .phone-block {
+    align-self: center;
+    background-image: url(https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
+    background-position: 0 0;
+    background-size: 454px 618px;
+    flex-basis: 454px;
+    height: 618px;
+    margin-left: -35px;
+    margin-right: -15px;
+  }
+  
+  .images-block {
+    margin: 99px 0 0 151px;
+    position: relative;
+  }
+  
+  .image {
+    transition: opacity 1.5s ease-in;
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+    height: 427px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 240px;
+  }
+  
+  .form-block {
+    color: rgba(var(--i1d,38,38,38),1);
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 12px;
+    max-width: 350px;
+  }
+  
+  .form {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgba(var(--d87,255,255,255),1);
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  .title {
+    margin: 22px auto 12px;
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    height: 51px;
+    width: 175px;
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  .login-form {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+  
+  .enters-block {
+    margin-top: 24px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+  }
+  
+  .email-block {
+    margin: 0 40px 6px;
+  }
+  
+  .email-enter-block {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-appearance: none;
+    background: rgba(var(--b3f,250,250,250),1);
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: rgba(var(--i1d,38,38,38),1);
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .email-label {
+    display: flex;
+    -webkit-box-flex: 1;
+    flex: 1 0 0;
+    height: 36px;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .email-span {
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 12px;
+    height: 36px;
+    left: 8px;
+    line-height: 36px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-overflow: ellipsis;
+    transform-origin: left;
+    transition: transform ease-out .1s,-webkit-transform ease-out .1s;
+    user-select: none;
+    white-space: nowrap;
+  }
+  
+  .email-enter {
+    font-size: 16px;
+    background: rgba(var(--b3f,250,250,250),1);
+    border: 0;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    margin: 0;
+    outline: 0;
+    overflow: hidden;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+  }
+  
+  .email-space {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    height: 100%;
+    padding-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .login-button-block {
+    margin-top: 8px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 8px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+  }
+  
+  .login-button {
+    background-color: rgba(0,149,246,.3);
+    opacity: 1;
+    border: 1px solid transparent;
+    pointer-events: none;
+    border-radius: 4px;
+    color: rgba(var(--eca,255,255,255),1);
+    position: relative;
+    appearance: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 9px;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: inherit;
+    user-select: none;
+    width: auto;
+  }
+  
+  button {
+    margin: 0;
+  }
+  
+  .button-content {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+  }
+  
+  .or-block {
+    margin: 10px 40px 18px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+  }
+  
+  .or-line {
+    background-color: rgba(var(--b38,219,219,219),1);
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 1px;
+    position: relative;
+    top: 0.45em;
+  }
+  
+  .or {
+    color: rgba(var(--f52,142,142,142),1);
+    -webkit-box-flex: 0;
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    text-transform: uppercase;
+    flex-grow: 0;
+  }
+  
+  .facebook-login-button-block {
+    margin: 8px 40px 8px 40px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+  }
+  
+  .facebook-login-button {
+    color: rgba(var(--d69,0,149,246),1);
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    border: 0;
+    appearance: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: inherit;
+    user-select: none;
+    width: auto;
+    background: 0 0;
+  }
+  
+  .button-span {
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    height: 16px;
+    width: 16px;
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+  }
+  
+  .button-span-text {
+    color: #385185;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  .forget-password {
+    color: rgba(var(--fe0,0,55,107),1);
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 12px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .signup-block {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgba(var(--d87,255,255,255),1);
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+  }
+  
+  .signup-content {
+    color: rgba(var(--f52,142,142,142),1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin: -3px 0 -4px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  
+  .signup {
+    color: rgba(var(--i1d,38,38,38),1);
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  .signup-link {
+    color: rgba(var(--d69,0,149,246),1);
+    text-decoration: none;
+  }
+  
+  .signup-span {
+    display: inline!important;
+    margin: 0!important;
+    color: rgba(var(--d69,0,149,246),1);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  .install-app-text {
+    color: rgba(var(--i1d,38,38,38),1);
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+  }
+  
+  .install-app-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+  }
+  
+  .app-link {
+    margin-right: 8px;
+    color: rgba(var(--fe0,0,55,107),1);
+    text-decoration: none;
+  }
+  
+  .app-link-2 {
+    margin-right: 0px;
+    color: rgba(var(--fe0,0,55,107),1);
+    text-decoration: none;
+  }
+  
+  .app {
+    height: 40px;
+  }
+  
+  a, img, div, span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  .footer {
+    background-color: rgba(var(--b3f,250,250,250),1);
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-ordinal-group: 6;
+    order: 5;
+    padding: 0 20px;
+  }
+  
+  .footer-blocks {
+    margin-bottom: 52px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+  }
+  
+  .links-block {
+    margin-top: 24px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+  }
+  
+  .links-list {
+    flex-wrap: wrap;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+  }
+  
+  .link-block {
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 12px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+  }
+  
+  .link {
+    color: rgba(var(--f52,142,142,142),1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin: -2px 0 -3px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  
+  a {
+    color: rgba(var(--fe0,0,55,107),1);
+    text-decoration: none;
+  }
+  
+  .lang-block {
+    margin-top: 12px;
+    margin-bottom: 12 px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+  }
+  
+  .lang-select-block {
+    color: rgba(var(--i1d,38,38,38),1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin: -2px 0 -3px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  
+  .span-lang-select {
+    font-weight: 400;
+    color: rgba(var(--f52,142,142,142),1);
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .select-lang-block {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  
+  .meta-block {
+    margin-left: 16px;
+    -webkit-box-flex: 0;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+  }
+  
+  .meta {
+    color: rgba(var(--f52,142,142,142),1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin: -2px 0 -3px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  
+  .arrow-down-block {
+    margin-left: 4px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+  }
+  
+  .arrow-span {
+    display: inline-block;
+    transform: rotate(180deg);
+    height: 12px;
+    width: 12px;
+  }
+  
+  .svg-arrow {
+    color: rgb(142, 142, 142);
+    fill: rgb(142, 142, 142);
+    height: 12;
+    width: 12;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .select {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: buttonface;
+    overflow: visible !important;
+    -webkit-writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 0px;
+  }
+  
+  .option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+  }
+  
+  path {
+    transform-origin: 0px 0px;
+  }
